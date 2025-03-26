@@ -1,0 +1,12 @@
+.button-green {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-color: #04AA6D;
+    -fx-border-width: 2px;
+    -fx-padding: 10px 20px;
+}
+
+.button-green:hover {
+    -fx-background-color: #04AA6D;
+    -fx-text-fill: white;
+}
