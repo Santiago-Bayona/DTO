@@ -5,6 +5,8 @@ public class JugadorDTO {
     private String apellido;
     private String nombreEquipo;
     public Jugador.Posicion posicion;
+    public Jugador Jugador;
+    public Equipo equipo;
 
 
     public JugadorDTO(Jugador jugador, Equipo equipo) {
@@ -13,6 +15,8 @@ public class JugadorDTO {
         this.cedula= jugador.getCedula();
         this.posicion = jugador.getPosicion();
         this.nombreEquipo = equipo.getNombreEquipo();
+        this.equipo = equipo;
+        this.Jugador = jugador;
     }
 
     public String getNombre() {
@@ -53,6 +57,19 @@ public class JugadorDTO {
 
     public void setPosicion(Jugador.Posicion posicion) {
         this.posicion = posicion;
+    }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+    public Jugador getJugador() {
+        return Jugador;
+    }
+    public void setJugador(Jugador jugador) {
+        Jugador = jugador;
     }
 
     @Override
