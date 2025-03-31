@@ -6,6 +6,9 @@ public class PartidoDTO {
     public String marcador;
     public Equipo equipo1,equipo2;
     public String codigoPartido;
+    public Arbitro arbitro;
+    public Marcador marcador1;
+    
 
     public PartidoDTO(String codigoPartido,Arbitro arbitro, Marcador marcador) {
         this.nombreArbitro = arbitro.getNombre();
@@ -13,6 +16,8 @@ public class PartidoDTO {
         this.equipo2= marcador.equipo2();
         this.marcador = marcador.Marcador();
         this.codigoPartido = codigoPartido;
+        this.arbitro = arbitro;
+        this.marcador1 = marcador;
     }
 
     public String getNombreArbitro() {
@@ -52,6 +57,19 @@ public class PartidoDTO {
     }
     public void setCodigoPartido(String codigoPartido) {
         this.codigoPartido = codigoPartido;
+    }
+
+    public Arbitro getArbitro() {
+        return arbitro;
+    }
+    public void setArbitro(Arbitro arbitro) {
+        this.arbitro = arbitro;
+    }
+    public Marcador getMarcador1() {
+        return marcador1;
+    }
+    public void setMarcador1(Marcador marcador1) {
+        this.marcador1 = marcador1;
     }
 
     @Override
