@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="573.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.dto_record.ViewController.PartidoVC">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="75.0" layoutX="-12.0" layoutY="-18.0" stroke="BLACK" strokeType="INSIDE" width="742.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                    <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#574aff" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+      <Label layoutX="287.0" layoutY="14.0" text="Partido">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Volver" mnemonicParsing="false" onAction="#Volver" styleClass="button-gradient" text="Volver" />
+      <TableView fx:id="tb_Arbitro" layoutX="31.0" layoutY="91.0" prefHeight="200.0" prefWidth="200.0" styleClass="table-view">
+        <columns>
+          <TableColumn fx:id="tbc_NombreArbitro" prefWidth="102.0" text="Nombre" />
+          <TableColumn fx:id="tbc_CategoriaArbitro" prefWidth="91.0" text="Categoria" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <TableView fx:id="tb_Marcador" layoutX="259.0" layoutY="91.0" prefHeight="200.0" prefWidth="200.0" styleClass="table-view">
+         <columns>
+            <TableColumn fx:id="tbc_Puntaje" prefWidth="199.0" text="Marcador" />
+         </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <TableView fx:id="tb_Partido" layoutY="313.0" prefHeight="260.0" prefWidth="521.0" styleClass="table-view">
+        <columns>
+          <TableColumn fx:id="tbc_NombreArbitro2" prefWidth="75.0" text="Arbitro" />
+            <TableColumn fx:id="tbc_Local" prefWidth="107.0" text="Local" />
+            <TableColumn fx:id="tbc_Marcador" prefWidth="93.0" text="Marcador" />
+            <TableColumn fx:id="tbc_Visitante" prefWidth="102.0" text="Visitante" />
+            <TableColumn fx:id="tbc_Codigo" prefWidth="143.0" text="Codigo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_Agregar" layoutX="599.0" layoutY="352.0" mnemonicParsing="false" onAction="#AgregarPartido" prefHeight="42.0" prefWidth="97.0" styleClass="button-gradient" text="Agregar" />
+      <Button fx:id="btn_Eliminar" layoutX="598.0" layoutY="407.0" mnemonicParsing="false" onAction="#EliminarArbitro" prefHeight="42.0" prefWidth="97.0" styleClass="button-gradient" text="Eliminar" />
+      <Button fx:id="btn_Actualizar" layoutX="599.0" layoutY="456.0" mnemonicParsing="false" onAction="#ActualizarArbitro" styleClass="button-gradient" text="Actualizar" />
+      <Button fx:id="btn_Limpiar" layoutX="599.0" layoutY="510.0" mnemonicParsing="false" onAction="#LimpiarArbitro" prefHeight="42.0" prefWidth="97.0" styleClass="button-gradient" text="Limpiar" />
+      <TextField fx:id="txt_Codigo" layoutX="497.0" layoutY="191.0" prefHeight="37.0" prefWidth="187.0" />
+      <Label layoutX="114.0" layoutY="64.0" text="Arbitro" />
+      <Label layoutX="552.0" layoutY="165.0" text="Codigo" />
+   </children>
+</AnchorPane>
