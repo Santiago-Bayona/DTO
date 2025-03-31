@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="256.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.dto_record.ViewController.MenuOtrosVC">
+   <children>
+      <Pane fx:id="sideBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="402.0">
+         <children>
+            <Circle layoutX="38.0" layoutY="218.0" radius="84.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#ffb5c0" offset="0.011278195488721804" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="334.0" layoutY="146.0" radius="57.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#ffb5c0" offset="0.007518796992481203" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button fx:id="btt_Volver" layoutX="22.0" layoutY="16.0" mnemonicParsing="false" onAction="#Volver" text="Volver" />
+            <Label alignment="CENTER" layoutX="86.0" layoutY="27.0" prefHeight="63.0" prefWidth="226.0" text="Otros">
+               <font>
+                  <Font name="Charter Black Italic" size="32.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#ffb5c0" offset="0.007518796992481203" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Circle layoutX="200.0" layoutY="177.0" radius="60.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#00b0fc" offset="0.011278195488721804" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Button fx:id="btt_ExamenMedico" layoutX="145.0" layoutY="164.0" mnemonicParsing="false" onAction="#RegistrarExamenMedico" prefHeight="27.0" prefWidth="110.0" text="Examen Medico" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

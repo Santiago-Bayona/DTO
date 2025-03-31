@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.dto_record.ViewController.MarcadorVC">
+   <children>
+      <AnchorPane fx:id="sideBar" layoutX="-20.0" layoutY="18.0" prefHeight="664.0" prefWidth="1235.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="110.0" layoutX="19.0" layoutY="-18.0" stroke="BLACK" strokeType="INSIDE" width="1216.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Button fx:id="Volver" layoutX="60.0" layoutY="1.0" mnemonicParsing="false" onAction="#Volver" text="Volver" styleClass="button-gradient"/>
+            <Label layoutX="469.0" layoutY="-34.0" prefHeight="145.0" prefWidth="333.0" text="Marcador" textAlignment="CENTER" textFill="#faf8f8">
+               <font>
+                  <Font name="Charter Black Italic" size="58.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="145.0" prefHeight="37.0" prefWidth="147.0" text="Codigo Marcador:" textAlignment="CENTER">
+               <font>
+                  <Font name="Euphemia UCAS" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_CodigoMarcador" layoutX="200.0" layoutY="148.0" prefHeight="31.0" prefWidth="154.0" />
+            <Label layoutX="66.0" layoutY="209.0" prefHeight="37.0" prefWidth="100.0" text="Marcador:">
+               <font>
+                  <Font name="Euphemia UCAS" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_Marcador" layoutX="200.0" layoutY="212.0" prefHeight="32.0" prefWidth="158.0" />
+            <TableView fx:id="tb_Marcador" layoutX="299.0" layoutY="420.0" prefHeight="167.0" prefWidth="807.0">
+               <columns>
+                  <TableColumn fx:id="tbc_CodigoMarcador" prefWidth="118.201904296875" text="Codigo Marcador" />
+                  <TableColumn fx:id="tbc_Marcador" prefWidth="148.99996948242188" text="Marcador" />
+                  <TableColumn fx:id="tbc_IdEquipo01" prefWidth="118.201904296875" text="ID Equipo" />
+                  <TableColumn fx:id="tbc_NombreEquipo01" prefWidth="148.99996948242188" text="Nombre Equipo" />
+                  <TableColumn fx:id="tbc_IdEquipo02" prefWidth="118.201904296875" text="ID Equipo" />
+                  <TableColumn fx:id="tbc_NombreEquipo02" prefWidth="151.0" text="Nombre Equipo" />
+               </columns>
+            </TableView>
+            <Button fx:id="btt_Agregar" layoutX="89.0" layoutY="379.0" mnemonicParsing="false" onAction="#AgregarMarcador" prefHeight="37.0" prefWidth="102.0" text="Agregar" styleClass="button-gradient" />
+            <Button fx:id="btt_Eliminar" layoutX="87.0" layoutY="434.0" mnemonicParsing="false" onAction="#EliminarMarcador" prefHeight="39.0" prefWidth="107.0" text="Eliminar" styleClass="button-gradient"/>
+            <Button fx:id="btt_Limpiar" layoutX="90.0" layoutY="493.0" mnemonicParsing="false" onAction="#LimpiarMarcador" prefHeight="44.0" prefWidth="102.0" text="Limpiar" styleClass="button-gradient"/>
+            <TableView fx:id="tb_Equipo2" layoutX="881.0" layoutY="190.0" prefHeight="167.0" prefWidth="269.0">
+               <columns>
+                  <TableColumn fx:id="tbc_IdEquipo2" prefWidth="118.201904296875" text="ID Equipo" />
+                  <TableColumn fx:id="tbc_NombreEquipo2" prefWidth="148.99996948242188" text="Nombre Equipo" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tb_Equipo1" layoutX="515.0" layoutY="193.0" prefHeight="167.0" prefWidth="269.0">
+               <columns>
+                  <TableColumn fx:id="tbc_IdEquipo1" prefWidth="118.201904296875" text="ID Equipo" />
+                  <TableColumn fx:id="tbc_NombreEquipo1" prefWidth="148.99996948242188" text="Nombre Equipo" />
+               </columns>
+            </TableView>
+            <Label layoutX="511.0" layoutY="141.0" prefHeight="44.0" prefWidth="89.0" text="Equipo 1" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Charter Black Italic" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#ffb5c0" offset="0.007518796992481203" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="886.0" layoutY="140.0" prefHeight="44.0" prefWidth="89.0" text="Equipo 2" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Charter Black Italic" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#ffb5c0" offset="0.007518796992481203" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="310.0" layoutY="358.0" prefHeight="44.0" prefWidth="95.0" text="Marcador" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Charter Black Italic" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ffb5c0" />
+                        <Stop color="#ffb5c0" offset="0.007518796992481203" />
+                        <Stop color="#574aff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@Style.css" />
+   </stylesheets>
+</AnchorPane>
